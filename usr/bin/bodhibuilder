@@ -128,7 +128,7 @@ case $1 in
     ;;
     clean|-c )
         echo "Removing the build directory now..."
-        rm -rf ${WORKDIR}
+        rm -rf ${WORKDIR}/bodhibuilder
         echo "Done...Exiting"
         exit 0
     ;;
