@@ -1,7 +1,7 @@
 # Espate-BodhiBuilder
 
 EspateOS用にカスタマイズされたBodhiBuilderです。  
-日本語化やvesamenu.c32が見つからないバグなどが修正されています。  
+vesamenu.c32が見つからないバグなどが修正されています。  
 アイコンを参照するディレクトリもEspateOS用に変更されています。  
 
 # インストール方法
@@ -16,11 +16,8 @@ git clone https://github.com/Hayao0819/espate-bodhibuilder.git
 chmod 755 -R espate-bodhibuilder
 dpkg -b espate-bodhibuilder
 rm -r espate-bodhibuilder
-sudo apt purge git --yes
 sudo apt install gdebi-core --yes
 sudo gdebi espate-bodhibuilder.deb
-sudo apt purge gdebi-core --yes
-sudo apt --purge --yes autoremove
 sudo apt clean
 sudo bodhibuilder-gtk
 ```

@@ -437,6 +437,7 @@ cdfs (){
 log_msg "Removing unnecessary packages, and cleaning up the system."
     rm -rf /opt/teamviewer/config/global.conf
     apt-get clean
+    apt-get --yes --purge autoremove &> /dev/null
 
 log_msg "Enabling bodhibuilder-firstboot"
 cp -f /etc/bodhibuilder/firstboot/file-firstboot /etc/init.d/bodhibuilder-firstboot
